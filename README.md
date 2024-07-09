@@ -14,7 +14,9 @@ The output of this processing is stored in the [data](data/) directory. Data for
 Quick-look plots analyzing the data are stored in the [plots](plots/) directory.
 
 ## Notes
-1) In the EIC loads in FMPP, FPL, MISO, PJM, SOCO, SWPP, and TVA are modeled as a whole in TELL but are separated in 
+1) All times from the weather forcing and the TELL model are in Universal Time Convention (UTC). You will need to 
+post-process them to the eastern time-zone as needed.
+2) In the EIC loads in FMPP, FPL, MISO, PJM, SOCO, SWPP, and TVA are modeled as a whole in TELL but are separated in 
 GridView. To create the data for these BAs I used the whole load simulated by TELL and distributed it to the subregions 
 within the BA using the annual total load in each subregion to portion out the TELL loads. Those subregions will have 
 the same hour-to-hour variability, but different magnitudes depending on their total load fractions. I used the same 
@@ -28,8 +30,8 @@ WBDC-WECC. Many of these regions have 0 or minimal hourly loads in the GridView 
 ## Mapping Files
 Two files describing the BA mapping between TELL and Gridview are provided in the [data](data/) directory. The file 
 'BA_Mapping.xlsx' shows how the names match up and which BAs have subregions. The file 
-'Final_EIC_WECC_BA_Crosscheck.xlsx' goes through the WECC+EIC Gridview file that Kostas passed to me column-by-column 
-to make sure that each region expected in the file is accounted for in my technique using the TELL model.
+'Final_EIC_BA_Crosscheck.xlsx' goes through the EIC Gridview file that was passed to me column-by-column to make sure 
+that each region expected in the file is accounted for in my technique using the TELL model.
 
 ## Citations
 Any use of this data in a publication, presentation, or report should use the following citations. Please contact 
