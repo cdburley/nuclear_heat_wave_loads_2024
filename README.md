@@ -10,9 +10,6 @@ The input data needed to recreate this process is stored in the [data](data/) di
 The output of this processing is stored in the [data](data/) directory. Data for the EIC uses the filename format: 
 "TELL_EIC_Loads_2025_Based_on_YYYY_Weather.csv"
 
-## Summary Plots
-Quick-look plots analyzing the data are stored in the [plots](plots/) directory.
-
 ## Notes
 1) All times from the weather forcing and the TELL model are in Universal Time Convention (UTC). You will need to 
 post-process them to the eastern time-zone as needed.
