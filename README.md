@@ -1,15 +1,14 @@
-# ntp_heat_wave_loads
+# nuclear_heat_wave_loads_2024
 This repository houses the raw data and processing scripts to create the hourly load time series by 
-Balancing Authority for the NTP project. Data are scaled to match the 2035 annual total loads data by BA. 
+Balancing Authority for the nuclear resilience project. Data are scaled to match the 2025 annual total loads data by BA. 
 The future loads for different weather years are based on the Total ELectricity Loads (TELL) model.
 
 ## Input Files
 The input data needed to recreate this process is stored in the [data](data/) directory.
 
 ## Output Files
-The output of this processing is stored in the [data](data/) directory. Original datasets for the WECC only use the 
-filename format: "TELL_Loads_2035_Based_on_YYYY_Weather_With_Climate_Change.csv". Data for the WECC and EIC combined 
-uses the filename format: "TELL_EIC_WECC_Loads_2035_Based_on_YYYY_Weather_With_Climate_Change.csv"
+The output of this processing is stored in the [data](data/) directory. Data for the WECC and EIC combined 
+uses the filename format: "TELL_EIC_WECC_Loads_2025_Based_on_YYYY_Weather.csv"
 
 ## Summary Plots
 Quick-look plots analyzing the data are stored in the [plots](plots/) directory.
